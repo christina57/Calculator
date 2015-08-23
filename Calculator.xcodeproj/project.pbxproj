@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF2ECCEA1B8987D6004E69B2 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2ECCE91B8987D6004E69B2 /* CalculatorBrain.swift */; };
 		CFF2362E1B7FCC9A00FCC9DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF2362D1B7FCC9A00FCC9DD /* AppDelegate.swift */; };
 		CFF236301B7FCC9A00FCC9DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF2362F1B7FCC9A00FCC9DD /* ViewController.swift */; };
 		CFF236331B7FCC9A00FCC9DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFF236311B7FCC9A00FCC9DD /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF2ECCE91B8987D6004E69B2 /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 		CFF236281B7FCC9A00FCC9DD /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF2362C1B7FCC9A00FCC9DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFF2362D1B7FCC9A00FCC9DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				CFF2362D1B7FCC9A00FCC9DD /* AppDelegate.swift */,
 				CFF2362F1B7FCC9A00FCC9DD /* ViewController.swift */,
 				CFF236311B7FCC9A00FCC9DD /* Main.storyboard */,
+				CF2ECCE91B8987D6004E69B2 /* CalculatorBrain.swift */,
 				CFF236341B7FCC9A00FCC9DD /* Images.xcassets */,
 				CFF236361B7FCC9A00FCC9DD /* LaunchScreen.xib */,
 				CFF2362B1B7FCC9A00FCC9DD /* Supporting Files */,
@@ -156,11 +159,14 @@
 		CFF236201B7FCC9A00FCC9DD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Christina;
 				TargetAttributes = {
 					CFF236271B7FCC9A00FCC9DD = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = MB53Q75HB5;
 					};
 					CFF2363C1B7FCC9A00FCC9DD = {
 						CreatedOnToolsVersion = 6.4;
@@ -212,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF2ECCEA1B8987D6004E69B2 /* CalculatorBrain.swift in Sources */,
 				CFF236301B7FCC9A00FCC9DD /* ViewController.swift in Sources */,
 				CFF2362E1B7FCC9A00FCC9DD /* AppDelegate.swift in Sources */,
 			);
@@ -276,6 +283,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -342,9 +350,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Christina.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -352,9 +364,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Christina.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -372,6 +388,7 @@
 				);
 				INFOPLIST_FILE = CalculatorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Christina.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calculator.app/Calculator";
 			};
@@ -387,6 +404,7 @@
 				);
 				INFOPLIST_FILE = CalculatorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Christina.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calculator.app/Calculator";
 			};
@@ -411,6 +429,7 @@
 				CFF236491B7FCC9A00FCC9DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CFF2364A1B7FCC9A00FCC9DD /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +438,7 @@
 				CFF2364C1B7FCC9A00FCC9DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
